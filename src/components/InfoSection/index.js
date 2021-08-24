@@ -15,25 +15,52 @@ import {
   ImgWrap,
 } from './InfoElements';
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  buttonLabel,
+  img,
+  alt,
+  primary,
+  dark,
+  dark2,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>TopLine</TopLine>
-                <Heading>Heading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <ButtonWrap>
-                  <Button to='home'>Button</Button>
+                  <Button
+                    to='home'
+                    smooth={true}
+                    duration={800}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
                 </ButtonWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img.default} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
