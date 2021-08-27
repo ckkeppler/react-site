@@ -14,6 +14,7 @@ export const homeObjectOne = {
   dark: true,
   primary: true,
   darkText: false,
+  link: 'home',
 };
 
 export const homeObjectTwo = {
@@ -27,11 +28,12 @@ export const homeObjectTwo = {
     'We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.',
   buttonLabel: 'Learn more',
   imgStart: true,
-  img: require('../../images/svg-1.svg'),
+  img: require('../../images/svg-6.svg'),
   alt: 'Piggy Bank',
   dark: false,
   primary: false,
   darkText: true,
+  link: 'home',
 };
 
 export const homeObjectThree = {
@@ -42,12 +44,13 @@ export const homeObjectThree = {
   topLine: 'Join our Team',
   headline: 'Creating an account is extremely easy',
   description:
-    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you"re ready to go.',
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
   buttonLabel: 'Start now',
   imgStart: false,
-  img: require('../../images/svg-6.svg'),
+  img: require('../../images/svg-1.svg'),
   alt: 'Paper',
   dark: false,
   primary: false,
   darkText: true,
+  link: 'home',
 };
